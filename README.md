@@ -12,7 +12,6 @@ Requirements:
 Commands : 
 
     npm install (install the project)
-    grunt dev (launch a browser-sync server to see the changes directly 
-in your browser)
+    grunt dev (launch a browser-sync server to see the changes directly in your browser)
      
 

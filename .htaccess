@@ -1,0 +1,2 @@
+AddType x-mapp-php7 .php
+AddHandler x-mapp-php7 .php

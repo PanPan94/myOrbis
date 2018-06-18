@@ -1,0 +1,43 @@
+.banner-quote {
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    position: relative;
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+
+
+    &:before {
+        content:'';
+        position: absolute;
+        z-index: 100;
+        top:0; left: 0;
+        width: 100%; 
+        height: 100%;
+        background-color: rgba(#000, 0.5);
+    }
+    
+    
+    blockquote {
+        z-index: 200;
+        color: white;
+        font-size: 3em;
+        text-align: center; 
+        @include display-flex;
+        @include flex-flow(row nowrap);
+        &:before, &:after {
+            content: '"';
+            display: inline-block;
+        }
+       
+
+        h4 {
+            display: inline-block;
+        }
+    }
+}
+.banner-quote-first {
+    background-image: url("../img/header-bg.jpg");
+}

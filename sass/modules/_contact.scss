@@ -1,0 +1,13 @@
+.respond {
+    padding: 30px;
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+    .contactphp {
+        text-align: center;
+
+        .btn {
+            margin: 25px auto;
+        }
+    }
+}

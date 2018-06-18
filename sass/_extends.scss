@@ -1,0 +1,87 @@
+.center {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.flex-cc {
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+}
+
+.btn {
+    width: 160px;
+    height: 40px;
+    box-shadow: 0 0px 30px rgba($red, 0.4);
+    @include border-radius(20px);
+    border: 2px solid $red;
+    background-color: rgba(0, 0, 0, 0);
+    color: $red;
+    @extend .flex-cc;
+    transition: all 0.3s;
+    &:hover {
+        border-color: lighten($red,2);
+        color: lighten($red,2);
+        box-shadow: 0 0px 30px rgba($red, 0.7);
+        cursor: pointer;
+        @include transform(translateY(-5px));
+    }
+}
+
+
+
+
+
+
+/*LOADER*/
+$size: 50px;
+@include keyframes(spin) {
+    from { @include transform(rotate(0deg)); }
+    to {  @include transform(rotate(360deg)); }
+  }
+
+
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; 
+}
+.section {
+    position: absolute;
+    z-index: 400;
+    width: 100%;
+    height: 100vh;
+    background-color: $main;
+    line-height: 100vh; 
+    text-align: center;
+}
+
+.loader-circles{
+    border-radius:$size;
+    border: 3px solid transparent;
+    border-top-color:#FFF;
+    @include animation(spin 1s linear infinite);
+    &:before, &:after{
+      content:'';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      bottom: 5px;
+      right: 5px;
+      border-radius:$size;
+      border: 3px solid transparent;
+      border-top-color:#FFF;
+      opacity:0.8;
+      @include animation(spin 10s linear infinite);
+    }
+    &:before{
+      top: 12px;
+      left: 12px;
+      bottom: 12px;
+      right: 12px;
+      opacity: .5;
+      @include animation(spin 5s linear infinite);
+    }
+  } 

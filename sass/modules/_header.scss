@@ -1,0 +1,46 @@
+.header {
+    height: 100vh; width: 100%;
+    background: url("../img/header-bg.jpg") no-repeat;
+    // background-color: $dgrey;
+    background-size: cover;
+    overflow: hidden;
+    .header-content {
+        @extend .center;
+        padding: 6vh 0 0 0;
+        @include display-flex;
+        @include justify-content(space-between);
+        @include flex-wrap(wrap);
+        color: white;
+        text-align: center;
+        
+
+    } //header-content
+
+    .header-caption {
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .header-caption-content {
+            @include display-flex;
+            @include justify-content(center);
+            @include flex-direction(column);
+            figure {
+                height: 250px; width: 250px;
+                margin: 0 auto;
+            }
+            h1 {
+                font-size: 75px;
+                font-weight: 700;
+            }
+            color: white;
+
+            a { 
+                color: lighten($main, 2);
+            }
+        }
+    }//header-caption
+}//header
+

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108038427-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108038427-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0, minimum-scale=1.0">    
+    <!-- Charging AOS module -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <script src="js/aos.js"></script>
+    <script>
+        let ovh = document.querySelector('html, body');
+        ovh.style.overflow ="hidden";
+    </script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        window.addEventListener("load",function() {
+            AOS.init({ duration : 2000, once : true });
+        })
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <title>MyOrbis</title>
+</head>
+<body>
+        <section class="section section-3" id="loader">
+                <span class="loader loader-circles"></span>
+        </section>
+        <header class="header" id="header">    
+            <div class="header-caption">
+                <div class="header-caption-content">
+                        <figure data-aos="zoom-in">
+                                <img src="./img/logo.svg" alt="MyOrbis">
+                        </figure>
+                    <h1 data-aos="zoom-in" data-aos-duration="1000">My <a>Orbis</a></h1>
+                    <p data-aos="fade-up" data-aos-delay="400">Agence de tourisme française fondée en 2000.</p>       
+                </div>
+            </div>
+        </header>
+
+        <!-- NAV -->
+        <nav class="nav" id="nav">
+            <div class="nav-container" id="nav-container">
+                <div class="nav-bars" id="nav-bars"></div>
+                <div class="logo-container">
+                        <div class="nav-logo"><img src="./img/logo.svg" alt="" width="50px"></div>
+                </div>
+                    <a href="#header" class="nav-element">Intro</a>
+                    <a href="#about" class="nav-element">À propos</a>
+                    <a href="#wwd" class="nav-element">Nos travaux</a>
+                    <a href="#footer" class="nav-element">Contact</a>
+            </div>
+        </nav>
+
+        <!-- SECTIONS -->
+        <section class="intro" id="about">
+            <header class="intro-content">
+                <div class="intro-content-h">
+                    <h2 data-aos="fade-right">Nous répertorions divers espaces tels que les lieux touristiques, culturel et de loisirs.</h2>
+                </div>
+                <div class="intro-content-p">                        
+                    <p data-aos="fade-left">
+                        Notre équipe composé de 6 membres, allie toutes ses compétences nécessaires afin de répondre aux demandes et aux besoins de sa clientèle amoureux des voyages. <br> <br>
+                        Notre objectif est d'aider et d'informer les touristes ainsi que les voyageurs durants leur visites mais aussi de diffuser nos valeurs qui sont de valoriser et de transmettre l'histoire des banlieues culturels et attractives, le plus souvent oubliées.
+                    </p>
+                </div>
+            </header>
+                
+            <article class="intro-banner" >
+                <div class="intro-banner-content">
+                    <h2 data-aos="fade-right">Qui sommes nous ?</h2>
+                    <div class="team">
+
+                        <div class="team-comp">
+                            <img src="img/team/alyssia.png" alt="">
+                            <p>
+                                <a class="team-comp-name">Alyssia Cyrille</a> <br>
+                                <a class="team-comp-role">Chef de projet</a>
+                            </p>
+                        </div>
+
+                        <div class="team-comp">
+                            <img src="img/team/zohra.png" alt="">
+                            <p>
+                                <a class="team-comp-name">Zohra Elkadiri</a> <br>
+                                <a class="team-comp-role">Directeur artistique</a>
+                            </p>
+                        </div>
+                        
+                        <div class="team-comp">
+                            <img src="img/team/dylan.png" alt="">
+                            <p>
+                                <a class="team-comp-name">Dylan Francilliette</a> <br>
+                                <a class="team-comp-role">Communicant</a>
+                            </p>
+                        </div>
+
+                        <div class="team-comp">
+                            <img src="img/team/sakina.png" alt="">
+                            <p>
+                                <a class="team-comp-name">Sakina Selhami</a> <br>
+                                <a class="team-comp-role">Graphiste</a>
+                            </p>
+                        </div>
+
+
+                        <div class="team-comp">
+                            <img src="img/team/ewa.png" alt="">
+                            <p>
+                                <a class="team-comp-name">Eugénie Hua</a> <br>
+                                <a class="team-comp-role">Communicante</a>
+                            </p>
+                        </div>
+
+                        <div class="team-comp">
+                            <img src="img/team/ptp.png" alt="">
+                            <p>
+                                <a class="team-comp-name">Paartheepan Raveenthiran</a> <br>
+                                <a class="team-comp-role">Développeur</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <section class="banner-quote-first banner-quote ">
+            <blockquote data-aos="fade-in"><h4>La diversité, en toute simplicité</h4></blockquote>
+        </section>
+        <section class="wwd" id="wwd">
+            <article class="wwd-article">
+                <div class="wwd-article-main">
+                    <figure>
+                        <img src="img/bhind.svg" alt="paper-plane" data-aos="fade-right">
+                        <figcaption>
+                            <p data-aos="fade-up" data-aos-delay="500">Le projet Bhind</p>
+                            <a href="https://myorbis.fr/bhind/" class="btn project-redirection">Accéder au site</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="wwd-desc" id="wwd-desc" data-aos="fade-right">
+                <p>
+                    Notre agence a mis en place le projet BHIND. Grâce à notre site internet et nos divers supports de communications tels que les réseaux sociaux qui sont un bon moyen de diffusion et de partage ainsi que nos affiches et vidéos publicitaires, tous ces dispositifs vont permettre à nos clients de suivre nos activités mais surtout de profiter de nos services. <br><br>
+                    Ce que nous proposons est bien plus que de simples musées ou monuments historiques, nous mettons en valeur les talents et la beauté que Paris lui-même ne possède. Nous offrons à nos visiteurs une nouvelle ère du tourisme. <br><br>
+                    
+                    En contribuant à ce projet, nous souhaitons donc ouvrir de nouveaux horizons pour les visiteurs et voyageurs du monde entier afin de partager et diffuser ces atouts majeurs que possède nos banlieues. <br><br>
+                    
+                </p>
+            </article>
+            
+            <article class="wwd-grid">
+                <div class="wwd-grid-items">
+                    <div class="wwd-grid-item" data-aos="fade-up">
+                        <img src="../img/wwd/book.svg" alt="book" width="100" height="100">
+                        <p>Nous avons rédigé le cahier des charges du projet Bhind.</p>
+                        <div class="btn wwd-btn" data-display="wwd-cdc">
+                            <a href="wwd-grid-content">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="wwd-grid-item" data-aos="fade-up">
+                        <img src="../img/wwd/history.svg" alt="book" width="100" height="100">
+                        <p>Cliquez ci-dessous pour voir l'avancée du projet.</p>
+                        <div class="btn wwd-btn" data-display="wwd-timeline">
+                            <a>En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="wwd-grid-item" data-aos="fade-up">
+                        <img src="../img/wwd/search.svg" alt="book" width="100" height="100">                        
+                        <p>Nous avons rédigé le cahier des recommandations du projet Bhind.</p>
+                        <div class="btn wwd-btn" data-display="wwd-cdr">
+                            <a>En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="wwd-grid-content" id="wwd-grid-content">
+                <article class="wwd-timeline" id="wwd-timeline">
+                    <ul>
+                        <li>
+                            <div class="timeline-content">
+                                <h3><time>13 septembre 2017</time></h3>
+                                    <p>Formation du groupe et mise en place des rôles de chacun des membres.<br><br>
+                                    Notre équipe de communication et le responsable se sont chargés premièrement de la répertorisation des différents lieux et endroits exploitables de banlieues que l’on pourra présenter sur le web documentaire. Le cahier des charges a été créé et a commencé à être rempli à ce moment.
+                                    <br><br>
+                                    Le développeur web et le responsable ont tenté de voir les différentes possibilités de construction de la maquette de notre site par rapport aux différentes référence que l’on a regroupé.
+                                    <br><br>
+                                    Les graphistes ont commencés à réaliser des croquis pour la création des logos du site et de l’agence. 
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>
+                                    <time>19 septembre 2017</time>
+                                </h3>
+                                    <p>
+                                        Le développeur web s’est chargé de créer la maquette et l’arborescence du site internet avec l’appui du chef de projet et l’une des graphiste. <br><br>
+                                        Les graphistes ont continué l'élaboration des logo et se sont avancés sur la constitution de la charte graphique et de la planche tendance. <br><br>
+                                        L’équipe de communication ont fait la rédaction des différentes cibles du projet. 
+                                    </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>
+                                    <time>20 septembre 2017</time>
+                                </h3>
+                                    <p>
+                                        L’équipe de graphistes se sont chargés de la création du logo du site et de l’agence en suivant les contraintes données par le chef de groupe. <br><br>
+                                        Afin de comparer et réunir les différents modèles effectués, une réunion du groupe a été mis en place.<br><br>
+                                        L’équipe de communication ont rédigés un sommaire provisoire du cahier des charges. <br> <br>
+                                    </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>
+                                    <time>2 octobre 2017</time>
+                                </h3>
+                                    <p>
+                                        Nous avons établis un rendez-vous avec notre tuteur, M.Benchenna afin qu’il valide le sommaire effectué du cahier des charges. 
+                                    </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>
+                                    <time>28 décembre</time>
+                                </h3>
+                                    <p>
+                                        Durant les vacances d’hiver, notre développeur a commencé à créer un prototype du site de l’agence, avec les différentes rubriques et une liste de lieux disponible  
+                                    </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>
+                                    <time>9 janvier</time>
+                                </h3>
+                                    <p>
+                                        Le chef de projet et les membres de l’équipe rédactionnelle, ont commencé à établir un budget prévisionnel, afin d’avoir une idée du coût total du projet et des autres sommes que l’agence devra payer pour d'autres dépenses éventuelles.
+                                    </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>
+                                    <time>17 janvier</time>
+                                </h3>
+                                    <p>
+                                        Oral d’entraînement avec Monsieur Benchena notre tuteur de projet tutoré, afin d’avoir un retour sur notre préparation et notre prototype avant la vraie soutenance.
+                                    </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>
+                                    <time>20 janvier</time>
+                                </h3>
+                                    <p>
+                                        Soutenance de projet avec Pascal vaillant, afin de présenter le prototype fonctionnel du site internet.
+                                    </p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </article>
+
+                <article class="wwd-cdc" id="wwd-cdc"></article>
+                <article class="wwd-cdr" id="wwd-cdr"></article>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="footer">
+            <div class="footer-content">
+                <div class="footer-form" data-aos="fade-right">
+                    <form action="contact.php" method="POST" id="contact">
+                        <div class="form-fields">
+                                <div class="field">
+                                    <label for="name" class="field-label">Nom</label>
+                                    <input type="text" name="name" class="field-input" id="field-name">
+                                </div>
+                                <div class="field">
+                                    <label for="mail" class="field-label">Email</label>
+                                    <input type="text" name="mail" class="field-input" id="field-mail">
+                                </div>
+                                <div class="field field-text">
+                                    <label for="message" class="field-label">Message</label>
+                                    <textarea type="text" name="message" class="field-input field-message" id="field-message"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <a class="btn" id="form-btn">Envoyer</a>
+                </div>
+
+                <div class="footer-contact" data-aos="fade-left">
+                    <h2>Des questions ? Contactez nous !</h2>   
+                    <br>
+                    <h3>Localisation</h3>
+                    <p>1 rue de Chablis,<br>93 000 Bobigny,<br>France</p>
+                    <br>
+                    <h3>Réseaux sociaux</h3>
+                    <div class="footer-social-media">
+                        <a href="https://www.instagram.com/myorbisfr/"><img src="../img/instagram.svg" alt="instagram" width="50px"></a>
+                        <a href="http://www.facebook.com/bhindfr/"><img src="../img/facebook.svg" alt="instagram" width="50px"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="author">
+                <p></p>
+            </div>
+        </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/smooth-scroll.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,55 @@
+.wwd-article {
+    @extend .center;
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+
+.wwd-article-main {
+    @extend .center;
+    @include flex-direction(column);
+    padding: 50px 0 0 0;
+    figure {
+        @extend .flex-cc;
+        flex-direction: column;
+        padding: 25px 0;
+
+        img {
+            height: 350px; width: 350px;
+        }
+
+        p {
+            line-height: 3em;
+            font-size: 2em;
+            font-weight: 300;
+            color: $black;
+        }
+
+        figcaption {
+            @include display-flex;
+            @include flex-direction(column);
+            @include justify-content(center);
+            @include align-items(center);
+
+            .project-redirection {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.wwd-desc {
+    @extend .center;
+    font-weight: 400;
+    color: $dgrey;
+    padding: 35px 0;
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .wwd-pdf {
+        width: 90%!important;
+    }
+}

@@ -1,0 +1,25 @@
+
+.wwd-grid {
+    @extend .center;
+}
+.wwd-grid-items { 
+    @include display-flex;
+    @include justify-content(space-around);
+    @include align-items(center);
+    @include flex-flow(row wrap);
+}
+
+.wwd-grid-item {
+    margin-top: 50px;
+    @include display-flex;
+    @include flex-direction(column);
+    max-width: 450px;
+    text-align: center;
+    img {
+        margin: 0 auto 25px auto;
+        display: block;
+    }
+
+}
+
+.drive-viewer-shadow .drive-viewer-default{ background-color: white!important; }
